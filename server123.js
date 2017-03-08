@@ -7,9 +7,9 @@ var div = require('div');   */
 var express = require('express');
 var app = express();
 //var app1= operators();
-let port = "3000";
+let port = "4000";
 let host = "127.0.0.1";
-app.use(express.static('nodejs'));
+app.use(express.static('node'));
 app.get('/index.html', function (req, res) {
    res.sendFile( __dirname + "/" + "index.html" );
 })
